@@ -1,0 +1,8 @@
+target 'HHPai' do
+pod 'Masonry'
+pod 'SDWebImage', '~> 4.0'
+pod 'MJRefresh'
+pod 'TBActionSheet'
+pod 'MBProgressHUD', '~> 1.0.0'
+pod 'YYWebImage'
+end

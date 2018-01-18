@@ -1,0 +1,37 @@
+PODS:
+  - Masonry (1.1.0)
+  - MBProgressHUD (1.0.0)
+  - MJRefresh (3.1.15)
+  - SDWebImage (4.2.2):
+    - SDWebImage/Core (= 4.2.2)
+  - SDWebImage/Core (4.2.2)
+  - TBActionSheet (1.5.5)
+  - YYCache (1.0.4)
+  - YYImage (1.0.4):
+    - YYImage/Core (= 1.0.4)
+  - YYImage/Core (1.0.4)
+  - YYWebImage (1.0.5):
+    - YYCache
+    - YYImage
+
+DEPENDENCIES:
+  - Masonry
+  - MBProgressHUD (~> 1.0.0)
+  - MJRefresh
+  - SDWebImage (~> 4.0)
+  - TBActionSheet
+  - YYWebImage
+
+SPEC CHECKSUMS:
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
+  MJRefresh: 9af70f5f9327a2cf87f0fb5929f35fcc2fa638ea
+  SDWebImage: 89a9d32cd520bbb46eb14e541d5109b3564af198
+  TBActionSheet: f1c95530f81b41b6dd75d9f653331e953fb3c7f5
+  YYCache: 8105b6638f5e849296c71f331ff83891a4942952
+  YYImage: 1e1b62a9997399593e4b9c4ecfbbabbf1d3f3b54
+  YYWebImage: 5f7f36aee2ae293f016d418c7d6ba05c4863e928
+
+PODFILE CHECKSUM: 77b8a9a5f7c458facd5d0645bbc2a0c8f892b950
+
+COCOAPODS: 1.4.0.rc.1

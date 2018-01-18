@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4704286D371D5B29B96EB872 /* libPods-HHPai.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 96E1BE2BFF197D67845CBFAF /* libPods-HHPai.a */; };
+		83515F4D20108DF000883219 /* HHTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83515F4C20108DF000883219 /* HHTabBarViewController.m */; };
+		83515F5B2010A4E900883219 /* FoundViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83515F5A2010A4E800883219 /* FoundViewController.m */; };
+		83515F5E2010A4FB00883219 /* MessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83515F5C2010A4FB00883219 /* MessageViewController.m */; };
+		83515F612010A50B00883219 /* MineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83515F5F2010A50A00883219 /* MineViewController.m */; };
+		83515F642010A56000883219 /* HHNaVViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83515F632010A56000883219 /* HHNaVViewController.m */; };
 		83D341BB1FF0A09C0025F8A1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 83D341BA1FF0A09C0025F8A1 /* AppDelegate.m */; };
 		83D341BE1FF0A09C0025F8A1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83D341BD1FF0A09C0025F8A1 /* ViewController.m */; };
 		83D341C11FF0A09C0025F8A1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83D341BF1FF0A09C0025F8A1 /* Main.storyboard */; };
@@ -38,6 +44,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6CF2DB8F3BC7B9BCCD517264 /* Pods-HHPai.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HHPai.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HHPai/Pods-HHPai.debug.xcconfig"; sourceTree = "<group>"; };
+		83515F4B20108DF000883219 /* HHTabBarViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HHTabBarViewController.h; sourceTree = "<group>"; };
+		83515F4C20108DF000883219 /* HHTabBarViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HHTabBarViewController.m; sourceTree = "<group>"; };
+		83515F592010A4E800883219 /* FoundViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoundViewController.h; sourceTree = "<group>"; };
+		83515F5A2010A4E800883219 /* FoundViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoundViewController.m; sourceTree = "<group>"; };
+		83515F5C2010A4FB00883219 /* MessageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageViewController.m; sourceTree = "<group>"; };
+		83515F5D2010A4FB00883219 /* MessageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageViewController.h; sourceTree = "<group>"; };
+		83515F5F2010A50A00883219 /* MineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineViewController.m; sourceTree = "<group>"; };
+		83515F602010A50A00883219 /* MineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineViewController.h; sourceTree = "<group>"; };
+		83515F622010A56000883219 /* HHNaVViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HHNaVViewController.h; sourceTree = "<group>"; };
+		83515F632010A56000883219 /* HHNaVViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HHNaVViewController.m; sourceTree = "<group>"; };
 		83D341B61FF0A09C0025F8A1 /* HHPai.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HHPai.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		83D341B91FF0A09C0025F8A1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		83D341BA1FF0A09C0025F8A1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -60,6 +77,8 @@
 		83D341F11FF0AA810025F8A1 /* HomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		83D341F61FF0AACA0025F8A1 /* HeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HeaderView.h; sourceTree = "<group>"; };
 		83D341F71FF0AACA0025F8A1 /* HeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HeaderView.m; sourceTree = "<group>"; };
+		96E1BE2BFF197D67845CBFAF /* libPods-HHPai.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HHPai.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D406FC03A0D7399CA3F1E889 /* Pods-HHPai.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HHPai.release.xcconfig"; path = "Pods/Target Support Files/Pods-HHPai/Pods-HHPai.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4704286D371D5B29B96EB872 /* libPods-HHPai.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,6 +107,114 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		31C46E8CA690289111907C1C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6CF2DB8F3BC7B9BCCD517264 /* Pods-HHPai.debug.xcconfig */,
+				D406FC03A0D7399CA3F1E889 /* Pods-HHPai.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		83515F3D20108CB300883219 /* Found */ = {
+			isa = PBXGroup;
+			children = (
+				83515F4820108D3300883219 /* Controller */,
+				83515F4720108D3300883219 /* Model */,
+				83515F4620108D3300883219 /* View */,
+			);
+			path = Found;
+			sourceTree = "<group>";
+		};
+		83515F3E20108CD600883219 /* Message */ = {
+			isa = PBXGroup;
+			children = (
+				83515F4520108D2C00883219 /* Controller */,
+				83515F4320108D2C00883219 /* Model */,
+				83515F4420108D2C00883219 /* View */,
+			);
+			path = Message;
+			sourceTree = "<group>";
+		};
+		83515F3F20108CDF00883219 /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+				83515F4220108D1D00883219 /* Controller */,
+				83515F4020108D1D00883219 /* Model */,
+				83515F4120108D1D00883219 /* View */,
+			);
+			path = Mine;
+			sourceTree = "<group>";
+		};
+		83515F4020108D1D00883219 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		83515F4120108D1D00883219 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		83515F4220108D1D00883219 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				83515F602010A50A00883219 /* MineViewController.h */,
+				83515F5F2010A50A00883219 /* MineViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		83515F4320108D2C00883219 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		83515F4420108D2C00883219 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		83515F4520108D2C00883219 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				83515F5D2010A4FB00883219 /* MessageViewController.h */,
+				83515F5C2010A4FB00883219 /* MessageViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		83515F4620108D3300883219 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		83515F4720108D3300883219 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		83515F4820108D3300883219 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				83515F592010A4E800883219 /* FoundViewController.h */,
+				83515F5A2010A4E800883219 /* FoundViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		83D341AD1FF0A09C0025F8A1 = {
 			isa = PBXGroup;
 			children = (
@@ -94,6 +222,8 @@
 				83D341D11FF0A09C0025F8A1 /* HHPaiTests */,
 				83D341DC1FF0A09C0025F8A1 /* HHPaiUITests */,
 				83D341B71FF0A09C0025F8A1 /* Products */,
+				31C46E8CA690289111907C1C /* Pods */,
+				FC007F842C1206C5E30AE1FA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -110,6 +240,9 @@
 		83D341B81FF0A09C0025F8A1 /* HHPai */ = {
 			isa = PBXGroup;
 			children = (
+				83515F3F20108CDF00883219 /* Mine */,
+				83515F3E20108CD600883219 /* Message */,
+				83515F3D20108CB300883219 /* Found */,
 				83D341EF1FF0A75B0025F8A1 /* Home */,
 				83D341EB1FF0A6EA0025F8A1 /* Base */,
 				83D341B91FF0A09C0025F8A1 /* AppDelegate.h */,
@@ -148,6 +281,10 @@
 			children = (
 				83D341EC1FF0A7190025F8A1 /* BaseViewController.h */,
 				83D341ED1FF0A7190025F8A1 /* BaseViewController.m */,
+				83515F4B20108DF000883219 /* HHTabBarViewController.h */,
+				83515F4C20108DF000883219 /* HHTabBarViewController.m */,
+				83515F622010A56000883219 /* HHNaVViewController.h */,
+				83515F632010A56000883219 /* HHNaVViewController.m */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -187,6 +324,14 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		FC007F842C1206C5E30AE1FA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				96E1BE2BFF197D67845CBFAF /* libPods-HHPai.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -194,9 +339,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 83D341E21FF0A09C0025F8A1 /* Build configuration list for PBXNativeTarget "HHPai" */;
 			buildPhases = (
+				FD11899E11BF48F9BBF96623 /* [CP] Check Pods Manifest.lock */,
 				83D341B21FF0A09C0025F8A1 /* Sources */,
 				83D341B31FF0A09C0025F8A1 /* Frameworks */,
 				83D341B41FF0A09C0025F8A1 /* Resources */,
+				56092F4DB7AFF19F9E7C9C61 /* [CP] Embed Pods Frameworks */,
+				B5B35054F0EFF5BBA0BD485B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -315,15 +463,74 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		56092F4DB7AFF19F9E7C9C61 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HHPai/Pods-HHPai-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B5B35054F0EFF5BBA0BD485B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-HHPai/Pods-HHPai-resources.sh",
+				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HHPai/Pods-HHPai-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FD11899E11BF48F9BBF96623 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HHPai-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		83D341B21FF0A09C0025F8A1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83515F642010A56000883219 /* HHNaVViewController.m in Sources */,
 				83D341BE1FF0A09C0025F8A1 /* ViewController.m in Sources */,
 				83D341F81FF0AACA0025F8A1 /* HeaderView.m in Sources */,
 				83D341EE1FF0A7190025F8A1 /* BaseViewController.m in Sources */,
+				83515F5B2010A4E900883219 /* FoundViewController.m in Sources */,
 				83D341C91FF0A09C0025F8A1 /* main.m in Sources */,
+				83515F4D20108DF000883219 /* HHTabBarViewController.m in Sources */,
+				83515F5E2010A4FB00883219 /* MessageViewController.m in Sources */,
+				83515F612010A50B00883219 /* MineViewController.m in Sources */,
 				83D341F21FF0AA810025F8A1 /* HomeViewController.m in Sources */,
 				83D341BB1FF0A09C0025F8A1 /* AppDelegate.m in Sources */,
 			);
@@ -486,6 +693,7 @@
 		};
 		83D341E31FF0A09C0025F8A1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6CF2DB8F3BC7B9BCCD517264 /* Pods-HHPai.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -500,6 +708,7 @@
 		};
 		83D341E41FF0A09C0025F8A1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D406FC03A0D7399CA3F1E889 /* Pods-HHPai.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
