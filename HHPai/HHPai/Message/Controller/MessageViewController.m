@@ -19,7 +19,6 @@
     // Do any additional setup after loading the view.
     //添加Han分支
     //Han分支提交新东西
-    //Han分支重新提交
 }
 
 - (void)didReceiveMemoryWarning {
