@@ -20,7 +20,7 @@
 }
 
 - (void)initUI{
-    
+    //xiugai 
 }
 
 - (void)didReceiveMemoryWarning {
