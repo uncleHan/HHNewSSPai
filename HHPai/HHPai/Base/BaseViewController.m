@@ -17,6 +17,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.navigationController.navigationBar.hidden = YES;
+    //我在master分支修改啦
 }
 
 - (void)didReceiveMemoryWarning {
