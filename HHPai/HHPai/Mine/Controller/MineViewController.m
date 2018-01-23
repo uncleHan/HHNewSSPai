@@ -18,6 +18,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
+    
+    //这是第一次的stash
 }
 
 - (void)didReceiveMemoryWarning {
