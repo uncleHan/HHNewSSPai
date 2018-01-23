@@ -17,7 +17,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    我现在在HHDev中工作,还没做完,要去解决另一个bug了,可是我这里报错呀,不能提交呀
+    
 }
 
 - (void)didReceiveMemoryWarning {
