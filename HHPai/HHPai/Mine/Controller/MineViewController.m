@@ -24,6 +24,8 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
     
+    //这是第二次的stash,刚才的删除了
+    
 }
 
 /*
