@@ -23,6 +23,9 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+    
+    //这是第二次的stash
+    
 }
 
 /*
