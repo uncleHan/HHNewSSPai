@@ -22,7 +22,11 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+
     //在HHDev分支上添加了这行文字
+
+    //在Han分支上添加了这行文字
+
 }
 
 
