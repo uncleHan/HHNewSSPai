@@ -7,8 +7,17 @@
 //
 
 #import "HomeViewController.h"
+#import "HHHeaderView.h"
 
 @interface HomeViewController ()
+<HHHeaderViewDelegate,
+UITableViewDelegate,
+UITableViewDataSource>
+
+@property (nonatomic,strong)HHHeaderView *headerView;
+@property (nonatomic,strong)UIScrollView *backGroudScrollView;
+@property (nonatomic,strong)UITableView *tableView;
+
 
 @end
 
@@ -16,8 +25,32 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
 }
+
+- (void)initView{
+    self.automaticallyAdjustsScrollViewInsets = NO;
+    
+}
+
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
+    return 1;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    return 2;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    static NSString *identifier = @"cello";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
+    if (cell == nil) {
+        cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
+    }
+    return cell;
+}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
