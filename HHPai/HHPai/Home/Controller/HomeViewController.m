@@ -31,6 +31,11 @@ UITableViewDataSource>
 - (void)initView{
     self.automaticallyAdjustsScrollViewInsets = NO;
     
+    //初始化北京scrollView
+    self.backGroudScrollView = [[UIScrollView alloc]initWithFrame:[UIScreen mainScreen].bounds];
+    [self.view addSubview:self.backGroudScrollView];
+    
+    
 }
 
 
