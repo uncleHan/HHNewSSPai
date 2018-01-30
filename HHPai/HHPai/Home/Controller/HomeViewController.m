@@ -33,19 +33,21 @@ UITableViewDataSource>
 
 - (void)initView{
     //初始化背景scrollView
-    self.backGroudScrollView = [[UIScrollView alloc]initWithFrame:[UIScreen mainScreen].bounds];
-    self.backGroudScrollView.backgroundColor = [UIColor greenColor];
+    UIScrollView *scrollView = [[UIScrollView alloc]initWithFrame:[UIScreen mainScreen].bounds];
+    scrollView.backgroundColor = [UIColor greenColor];
 //    [self.view addSubview:self.backGroudScrollView];
-    self.backGroudScrollView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
-    self.backGroudScrollView.delegate = self;
-    [self.view insertSubview:self.backGroudScrollView atIndex:0];
+    scrollView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
+    scrollView.delegate = self;
+    scrollView.contentSize = CGSizeMake(kScreenWith, kScreenHeight + 1);
+    [self.view insertSubview:scrollView atIndex:0];
+    self.backGroudScrollView = scrollView;
     
     
     //tableView
     self.tableView = [[UITableView alloc]initWithFrame:[UIScreen mainScreen].bounds style:UITableViewStylePlain];
     self.tableView.delegate = self;
-    self.tableView.dataSource = self;
-    self.tableView.backgroundColor = [UIColor whiteColor];
+    self.tableView.dataSource = self;//
+//    self.tableView.backgroundColor = [UIColor whiteColor];
     self.tableView.contentInset = UIEdgeInsetsMake(130, 0, 0, 0);
     self.tableView.backgroundColor = [UIColor redColor];
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
@@ -59,7 +61,7 @@ UITableViewDataSource>
             [self.backGroudScrollView.mj_header endRefreshing];
         });
     }];
-    self.backGroudScrollView.mj_header = refreshHeader;
+//    self.backGroudScrollView.mj_header = refreshHeader;
     
     
     //headerView
@@ -76,7 +78,12 @@ UITableViewDataSource>
 
 #pragma -- mark UIScrollViewDelegate
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView{
-    NSLog(@"contentOffset.y = %.f",scrollView.contentOffset.y);
+    
+    if ([scrollView isKindOfClass:[UITableView class]]) {
+        NSLog(@"tableView的contentOffset.y = %.f",scrollView.contentOffset.y);
+    }else{
+        NSLog(@"scrollView的contentOffset.y = %.f",scrollView.contentOffset.y);
+    }
     [self.headerView viewScrollByY:scrollView.contentOffset.y];
 }
 
@@ -95,6 +102,7 @@ UITableViewDataSource>
     if (cell == nil) {
         cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
     }
+    cell.backgroundColor = [UIColor cyanColor];
     return cell;
 }
 
