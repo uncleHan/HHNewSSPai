@@ -37,7 +37,6 @@ UITableViewDataSource>
     scrollView.backgroundColor = [UIColor greenColor];
 //    [self.view addSubview:self.backGroudScrollView];
     scrollView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
-    scrollView.delegate = self;
     scrollView.contentSize = CGSizeMake(kScreenWith, kScreenHeight + 1);
     [self.view insertSubview:scrollView atIndex:0];
     self.backGroudScrollView = scrollView;
@@ -61,7 +60,7 @@ UITableViewDataSource>
             [self.backGroudScrollView.mj_header endRefreshing];
         });
     }];
-//    self.backGroudScrollView.mj_header = refreshHeader;
+    self.backGroudScrollView.mj_header = refreshHeader;
     
     
     //headerView
