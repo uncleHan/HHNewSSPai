@@ -715,7 +715,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MZTV84V6H5;
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
-				GCC_PREFIX_HEADER = /Users/henghan/Desktop/HHPai/HHPai/HHPai/HHPai.pch;
+				GCC_PREFIX_HEADER = /Users/hanheng/Desktop/HHNewSSPai/HHPai/HHPai.xcworkspace;
 				INFOPLIST_FILE = HHPai/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.futuremove.HHPai;
@@ -732,7 +732,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MZTV84V6H5;
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
-				GCC_PREFIX_HEADER = /Users/henghan/Desktop/HHPai/HHPai/HHPai/HHPai.pch;
+				GCC_PREFIX_HEADER = /Users/hanheng/Desktop/HHNewSSPai/HHPai/HHPai.xcworkspace;
 				INFOPLIST_FILE = HHPai/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.futuremove.HHPai;
