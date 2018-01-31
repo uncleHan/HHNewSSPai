@@ -17,11 +17,17 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    
+    //这是第一次的stash
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+    
+    //这是第二次的stash,刚才的删除了
+    
 }
 
 /*

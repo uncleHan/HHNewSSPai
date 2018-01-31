@@ -16,6 +16,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+}
+
+
+- (void)viewWillAppear:(BOOL)animated{
     self.navigationController.navigationBar.hidden = YES;
     //我在master分支修改啦
 }
@@ -23,6 +27,7 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+
 }
 
 
