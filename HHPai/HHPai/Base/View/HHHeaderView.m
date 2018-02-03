@@ -63,6 +63,9 @@
 //            self.frame = CGRectMake(0, 0, kScreenWith, 3 - Y);
 //        });
         self.frame = CGRectMake(0, 0, kScreenWith, 3 - Y);
+    }else if (Y > -61){
+        //防止滑动过快,视图更新不过来
+        self.titleLabel.font = [UIFont fontWithName:@"HelveticaNeue-Bold" size:20.0];
     }
 }
 
