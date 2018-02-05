@@ -9,18 +9,22 @@
 #import "HomeViewController.h"
 #import "HHHeaderView.h"
 #import "MJRefresh.h"
+#import "AdsCell.h"
 
 
 @interface HomeViewController ()
 <HHHeaderViewDelegate,
 UIScrollViewDelegate,
 UITableViewDelegate,
-UITableViewDataSource>
+UITableViewDataSource,
+AdsCellDelegate>
 
 @property (nonatomic,strong)HHHeaderView *headerView;
 @property (nonatomic,strong)UIScrollView *backGroudScrollView;
 @property (nonatomic,strong)UITableView *tableView;
 
+//data
+@property (nonatomic,strong)NSMutableArray *adsData;
 
 @end
 
@@ -28,7 +32,9 @@ UITableViewDataSource>
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self initData];
     [self initView];
+    
 }
 
 - (void)initView{
@@ -70,6 +76,14 @@ UITableViewDataSource>
     [self.backGroudScrollView addSubview:self.headerView];
 }
 
+- (void)initData{
+    //轮播图
+    NSData *adsData = [NSData dataWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"adsData" ofType:@"json"]];
+    NSDictionary *adsDic = [NSJSONSerialization JSONObjectWithData:adsData options:NSJSONReadingAllowFragments error:nil];
+    NSMutableArray *adsArray = adsDic[@"data"];
+    AdsModel *adsModel = [AdsModel AdsModelWithArr:adsArray];
+    [self.adsData addObject:adsModel];
+}
 
 - (void)dropDownToRefresh{
     
@@ -92,19 +106,46 @@ UITableViewDataSource>
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return 20;
+    return 3;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    if (indexPath.row == 0) {
+        AdsModel *adsModel = self.adsData[0];
+        return adsModel.cellHeight;
+    }else{
+        return 10;
+    }
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    static NSString *identifier = @"cello";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
-    if (cell == nil) {
-        cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
+    if (indexPath.row == 0) {
+        AdsModel *adsModel = [self.adsData objectAtIndex:0];
+        AdsCell *adsCell = [AdsCell cellWithTableView:tableView adsModel:adsModel];
+        adsCell.delegate = self;
+        return adsCell;
+    }else{
+        NSString *identifier = @"default";
+        UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
+        if (cell == nil) {
+            cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
+        }        
+        return cell;
     }
-    cell.backgroundColor = [UIColor cyanColor];
-    return cell;
 }
 
+#pragma -- mark cellDelegate
+- (void)adsCellTappedByTag:(NSInteger)tag{
+    
+}
+
+#pragma -- mark 懒加载
+- (NSMutableArray *)adsData{
+    if (!_adsData) {
+        _adsData = [[NSMutableArray alloc]init];
+    }
+    return _adsData;
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
