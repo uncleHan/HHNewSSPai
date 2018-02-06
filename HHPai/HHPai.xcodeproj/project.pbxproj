@@ -8,11 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		4704286D371D5B29B96EB872 /* libPods-HHPai.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 96E1BE2BFF197D67845CBFAF /* libPods-HHPai.a */; };
+		8340E65E201836AA00BAC279 /* HHHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8340E65D201836AA00BAC279 /* HHHeaderView.m */; };
 		83515F4D20108DF000883219 /* HHTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83515F4C20108DF000883219 /* HHTabBarViewController.m */; };
 		83515F5B2010A4E900883219 /* FoundViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83515F5A2010A4E800883219 /* FoundViewController.m */; };
 		83515F5E2010A4FB00883219 /* MessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83515F5C2010A4FB00883219 /* MessageViewController.m */; };
 		83515F612010A50B00883219 /* MineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83515F5F2010A50A00883219 /* MineViewController.m */; };
 		83515F642010A56000883219 /* HHNaVViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83515F632010A56000883219 /* HHNaVViewController.m */; };
+		8367949720283CF100DDF728 /* AdsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8367949620283CF100DDF728 /* AdsModel.m */; };
+		8367949A20283D1300DDF728 /* AdsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8367949920283D1300DDF728 /* AdsCell.m */; };
+		8367949D2028530800DDF728 /* adsData.json in Resources */ = {isa = PBXBuildFile; fileRef = 8367949C2028530800DDF728 /* adsData.json */; };
 		83D341BB1FF0A09C0025F8A1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 83D341BA1FF0A09C0025F8A1 /* AppDelegate.m */; };
 		83D341BE1FF0A09C0025F8A1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83D341BD1FF0A09C0025F8A1 /* ViewController.m */; };
 		83D341C11FF0A09C0025F8A1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83D341BF1FF0A09C0025F8A1 /* Main.storyboard */; };
@@ -45,6 +49,9 @@
 
 /* Begin PBXFileReference section */
 		6CF2DB8F3BC7B9BCCD517264 /* Pods-HHPai.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HHPai.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HHPai/Pods-HHPai.debug.xcconfig"; sourceTree = "<group>"; };
+		833A103420197A6500248E27 /* HHPai.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HHPai.pch; sourceTree = "<group>"; };
+		8340E65C201836AA00BAC279 /* HHHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HHHeaderView.h; sourceTree = "<group>"; };
+		8340E65D201836AA00BAC279 /* HHHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HHHeaderView.m; sourceTree = "<group>"; };
 		83515F4B20108DF000883219 /* HHTabBarViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HHTabBarViewController.h; sourceTree = "<group>"; };
 		83515F4C20108DF000883219 /* HHTabBarViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HHTabBarViewController.m; sourceTree = "<group>"; };
 		83515F592010A4E800883219 /* FoundViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoundViewController.h; sourceTree = "<group>"; };
@@ -55,6 +62,11 @@
 		83515F602010A50A00883219 /* MineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineViewController.h; sourceTree = "<group>"; };
 		83515F622010A56000883219 /* HHNaVViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HHNaVViewController.h; sourceTree = "<group>"; };
 		83515F632010A56000883219 /* HHNaVViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HHNaVViewController.m; sourceTree = "<group>"; };
+		8367949520283CF100DDF728 /* AdsModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AdsModel.h; sourceTree = "<group>"; };
+		8367949620283CF100DDF728 /* AdsModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AdsModel.m; sourceTree = "<group>"; };
+		8367949820283D1300DDF728 /* AdsCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AdsCell.h; sourceTree = "<group>"; };
+		8367949920283D1300DDF728 /* AdsCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AdsCell.m; sourceTree = "<group>"; };
+		8367949C2028530800DDF728 /* adsData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = adsData.json; sourceTree = "<group>"; };
 		83D341B61FF0A09C0025F8A1 /* HHPai.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HHPai.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		83D341B91FF0A09C0025F8A1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		83D341BA1FF0A09C0025F8A1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -114,6 +126,15 @@
 				D406FC03A0D7399CA3F1E889 /* Pods-HHPai.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		8340E65B2018367900BAC279 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8340E65C201836AA00BAC279 /* HHHeaderView.h */,
+				8340E65D201836AA00BAC279 /* HHHeaderView.m */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		83515F3D20108CB300883219 /* Found */ = {
@@ -215,6 +236,14 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
+		8367949B202852FA00DDF728 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				8367949C2028530800DDF728 /* adsData.json */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
 		83D341AD1FF0A09C0025F8A1 = {
 			isa = PBXGroup;
 			children = (
@@ -240,6 +269,7 @@
 		83D341B81FF0A09C0025F8A1 /* HHPai */ = {
 			isa = PBXGroup;
 			children = (
+				8367949B202852FA00DDF728 /* Data */,
 				83515F3F20108CDF00883219 /* Mine */,
 				83515F3E20108CD600883219 /* Message */,
 				83515F3D20108CB300883219 /* Found */,
@@ -254,6 +284,7 @@
 				83D341C41FF0A09C0025F8A1 /* LaunchScreen.storyboard */,
 				83D341C71FF0A09C0025F8A1 /* Info.plist */,
 				83D341C81FF0A09C0025F8A1 /* main.m */,
+				833A103420197A6500248E27 /* HHPai.pch */,
 			);
 			path = HHPai;
 			sourceTree = "<group>";
@@ -279,6 +310,7 @@
 		83D341EB1FF0A6EA0025F8A1 /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				8340E65B2018367900BAC279 /* View */,
 				83D341EC1FF0A7190025F8A1 /* BaseViewController.h */,
 				83D341ED1FF0A7190025F8A1 /* BaseViewController.m */,
 				83515F4B20108DF000883219 /* HHTabBarViewController.h */,
@@ -313,6 +345,8 @@
 			children = (
 				83D341F61FF0AACA0025F8A1 /* HeaderView.h */,
 				83D341F71FF0AACA0025F8A1 /* HeaderView.m */,
+				8367949820283D1300DDF728 /* AdsCell.h */,
+				8367949920283D1300DDF728 /* AdsCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -320,6 +354,8 @@
 		83D341F51FF0AA9D0025F8A1 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				8367949520283CF100DDF728 /* AdsModel.h */,
+				8367949620283CF100DDF728 /* AdsModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -443,6 +479,7 @@
 			files = (
 				83D341C61FF0A09C0025F8A1 /* LaunchScreen.storyboard in Resources */,
 				83D341C31FF0A09C0025F8A1 /* Assets.xcassets in Resources */,
+				8367949D2028530800DDF728 /* adsData.json in Resources */,
 				83D341C11FF0A09C0025F8A1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -523,8 +560,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				83515F642010A56000883219 /* HHNaVViewController.m in Sources */,
+				8340E65E201836AA00BAC279 /* HHHeaderView.m in Sources */,
 				83D341BE1FF0A09C0025F8A1 /* ViewController.m in Sources */,
 				83D341F81FF0AACA0025F8A1 /* HeaderView.m in Sources */,
+				8367949A20283D1300DDF728 /* AdsCell.m in Sources */,
 				83D341EE1FF0A7190025F8A1 /* BaseViewController.m in Sources */,
 				83515F5B2010A4E900883219 /* FoundViewController.m in Sources */,
 				83D341C91FF0A09C0025F8A1 /* main.m in Sources */,
@@ -533,6 +572,7 @@
 				83515F612010A50B00883219 /* MineViewController.m in Sources */,
 				83D341F21FF0AA810025F8A1 /* HomeViewController.m in Sources */,
 				83D341BB1FF0A09C0025F8A1 /* AppDelegate.m in Sources */,
+				8367949720283CF100DDF728 /* AdsModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -698,6 +738,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MZTV84V6H5;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/HHPai/HHPai.pch";
 				INFOPLIST_FILE = HHPai/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.futuremove.HHPai;
@@ -713,6 +755,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MZTV84V6H5;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/HHPai/HHPai.pch";
 				INFOPLIST_FILE = HHPai/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.futuremove.HHPai;
