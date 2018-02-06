@@ -17,6 +17,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    //添加Han分支
+    //我是han分支
+
+    //使用han分支重新提交
+    //han分支提交工作到master分支上
+
+
 }
 
 - (void)initUI{
