@@ -59,28 +59,27 @@
         //
     }
     if (Y > -97 && Y <= -61){
+        //在这一小段范围内,控制headerview的高度递增和递减
+
         //原文遇到必须在主线程才能更新frame的问题,不知为何,我没遇到
         dispatch_async(dispatch_get_main_queue(), ^{
             self.frame = CGRectMake(0, 0, kScreenWith, 3 - Y);
         });
 //        self.frame = CGRectMake(0, 0, kScreenWith, 3 - Y);
     }
-    
-    
-    if (Y < -130) {
-        self.titleLabel.font =[UIFont fontWithName:@"HelveticaNeue-Bold" size:36.0];
+
+    if (Y < -130){
+        self.titleLabel.font = [UIFont fontWithName:@"HelveticaNeue-Bold" size:36.0];
         [self.titleLabel mas_makeConstraints:^(MASConstraintMaker *make) {
             make.height.mas_equalTo(36.0);
         }];
         [self.button mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.height.mas_equalTo(20.0);
             make.width.mas_equalTo(20.0);
+            make.height.mas_equalTo(20.0);
         }];
-        self.frame = CGRectMake(0, 0, kScreenWith, 100 + ((-130)-Y));
+        self.frame = CGRectMake(0, 0, kScreenWith, 100 + (-130) - Y);
     }
-    
-    if (Y > -97){
-        //防止滑动过快,视图更新不过来
+    if (Y > -61){
         self.titleLabel.font = [UIFont fontWithName:@"HelveticaNeue-Bold" size:20.0];
         [self.titleLabel mas_makeConstraints:^(MASConstraintMaker *make) {
             make.height.mas_equalTo(20.0);
@@ -91,7 +90,6 @@
         }];
         self.frame = CGRectMake(0, 0, kScreenWith, 64);
     }
-
 }
 
 #pragma mark lazyInit
