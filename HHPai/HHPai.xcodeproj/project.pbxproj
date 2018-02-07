@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		4704286D371D5B29B96EB872 /* libPods-HHPai.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 96E1BE2BFF197D67845CBFAF /* libPods-HHPai.a */; };
+		833A03AC202AAC280088DD71 /* NewsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 833A03AB202AAC280088DD71 /* NewsCell.m */; };
+		833A03AF202AD1BF0088DD71 /* NewsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 833A03AE202AD1BF0088DD71 /* NewsModel.m */; };
+		833A03B1202ADB530088DD71 /* newsData.json in Resources */ = {isa = PBXBuildFile; fileRef = 833A03B0202ADB530088DD71 /* newsData.json */; };
 		8340E65E201836AA00BAC279 /* HHHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8340E65D201836AA00BAC279 /* HHHeaderView.m */; };
 		83515F4D20108DF000883219 /* HHTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83515F4C20108DF000883219 /* HHTabBarViewController.m */; };
 		83515F5B2010A4E900883219 /* FoundViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83515F5A2010A4E800883219 /* FoundViewController.m */; };
@@ -49,6 +52,11 @@
 
 /* Begin PBXFileReference section */
 		6CF2DB8F3BC7B9BCCD517264 /* Pods-HHPai.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HHPai.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HHPai/Pods-HHPai.debug.xcconfig"; sourceTree = "<group>"; };
+		833A03AA202AAC280088DD71 /* NewsCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewsCell.h; sourceTree = "<group>"; };
+		833A03AB202AAC280088DD71 /* NewsCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewsCell.m; sourceTree = "<group>"; };
+		833A03AD202AD1BF0088DD71 /* NewsModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewsModel.h; sourceTree = "<group>"; };
+		833A03AE202AD1BF0088DD71 /* NewsModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewsModel.m; sourceTree = "<group>"; };
+		833A03B0202ADB530088DD71 /* newsData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = newsData.json; sourceTree = "<group>"; };
 		833A103420197A6500248E27 /* HHPai.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HHPai.pch; sourceTree = "<group>"; };
 		8340E65C201836AA00BAC279 /* HHHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HHHeaderView.h; sourceTree = "<group>"; };
 		8340E65D201836AA00BAC279 /* HHHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HHHeaderView.m; sourceTree = "<group>"; };
@@ -240,6 +248,7 @@
 			isa = PBXGroup;
 			children = (
 				8367949C2028530800DDF728 /* adsData.json */,
+				833A03B0202ADB530088DD71 /* newsData.json */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -347,6 +356,8 @@
 				83D341F71FF0AACA0025F8A1 /* HeaderView.m */,
 				8367949820283D1300DDF728 /* AdsCell.h */,
 				8367949920283D1300DDF728 /* AdsCell.m */,
+				833A03AA202AAC280088DD71 /* NewsCell.h */,
+				833A03AB202AAC280088DD71 /* NewsCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -356,6 +367,8 @@
 			children = (
 				8367949520283CF100DDF728 /* AdsModel.h */,
 				8367949620283CF100DDF728 /* AdsModel.m */,
+				833A03AD202AD1BF0088DD71 /* NewsModel.h */,
+				833A03AE202AD1BF0088DD71 /* NewsModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -481,6 +494,7 @@
 				83D341C31FF0A09C0025F8A1 /* Assets.xcassets in Resources */,
 				8367949D2028530800DDF728 /* adsData.json in Resources */,
 				83D341C11FF0A09C0025F8A1 /* Main.storyboard in Resources */,
+				833A03B1202ADB530088DD71 /* newsData.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -563,10 +577,12 @@
 				8340E65E201836AA00BAC279 /* HHHeaderView.m in Sources */,
 				83D341BE1FF0A09C0025F8A1 /* ViewController.m in Sources */,
 				83D341F81FF0AACA0025F8A1 /* HeaderView.m in Sources */,
+				833A03AF202AD1BF0088DD71 /* NewsModel.m in Sources */,
 				8367949A20283D1300DDF728 /* AdsCell.m in Sources */,
 				83D341EE1FF0A7190025F8A1 /* BaseViewController.m in Sources */,
 				83515F5B2010A4E900883219 /* FoundViewController.m in Sources */,
 				83D341C91FF0A09C0025F8A1 /* main.m in Sources */,
+				833A03AC202AAC280088DD71 /* NewsCell.m in Sources */,
 				83515F4D20108DF000883219 /* HHTabBarViewController.m in Sources */,
 				83515F5E2010A4FB00883219 /* MessageViewController.m in Sources */,
 				83515F612010A50B00883219 /* MineViewController.m in Sources */,

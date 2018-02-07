@@ -10,6 +10,9 @@
 #import "HHHeaderView.h"
 #import "MJRefresh.h"
 #import "AdsCell.h"
+#import "NewsModel.h"
+#import "NewsCell.h"
+
 
 
 @interface HomeViewController ()
@@ -17,7 +20,8 @@
 UIScrollViewDelegate,
 UITableViewDelegate,
 UITableViewDataSource,
-AdsCellDelegate>
+AdsCellDelegate,
+NewsCellDelegate>
 
 @property (nonatomic,strong)HHHeaderView *headerView;
 @property (nonatomic,strong)UIScrollView *backGroudScrollView;
@@ -25,7 +29,7 @@ AdsCellDelegate>
 
 //data
 @property (nonatomic,strong)NSMutableArray *adsData;
-
+@property (nonatomic,strong)NSMutableArray *newsData;
 @end
 
 @implementation HomeViewController
@@ -83,6 +87,16 @@ AdsCellDelegate>
     NSMutableArray *adsArray = adsDic[@"data"];
     AdsModel *adsModel = [AdsModel AdsModelWithArr:adsArray];
     [self.adsData addObject:adsModel];
+    
+    //新闻
+    NSData *newsData = [NSData dataWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"newsData" ofType:@"json"]];
+    NSDictionary *newsDic = [NSJSONSerialization JSONObjectWithData:newsData options:NSJSONReadingAllowFragments error:nil];
+    NSMutableArray *newsArray = newsDic[@"data"];
+    for (NSDictionary *dic in newsArray) {
+        NewsModel *newsModel = [NewsModel newsModelWithDic:dic];
+        [self.newsData addObject:newsModel];
+    }
+                        
 }
 
 - (void)dropDownToRefresh{
@@ -106,7 +120,7 @@ AdsCellDelegate>
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return 3;
+    return self.adsData.count + self.newsData.count;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -114,7 +128,9 @@ AdsCellDelegate>
         AdsModel *adsModel = self.adsData[0];
         return adsModel.cellHeight;
     }else{
-        return 10;
+        NewsModel *newsModel = [self.newsData objectAtIndex:indexPath.row - 1];
+    
+        return newsModel.cellHeight;
     }
 }
 
@@ -125,17 +141,29 @@ AdsCellDelegate>
         adsCell.delegate = self;
         return adsCell;
     }else{
-        NSString *identifier = @"default";
-        UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
-        if (cell == nil) {
-            cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
-        }        
-        return cell;
+//        NSString *identifier = @"default";
+//        UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
+//        if (cell == nil) {
+//            cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
+//        }
+//        return cell;
+        NewsModel *newsModel = [self.newsData objectAtIndex:indexPath.row - 1];
+        NewsCell *newsCell = [NewsCell cellWithTableView:tableView NewsModel:newsModel];
+        newsCell.delegate = self;
+        return newsCell;
     }
 }
 
 #pragma -- mark cellDelegate
 - (void)adsCellTappedByTag:(NSInteger)tag{
+    
+}
+
+- (void)menuButtonClickedWithID:(NSString *)articleID{
+    
+}
+
+- (void)swipeLeft{
     
 }
 
@@ -145,6 +173,13 @@ AdsCellDelegate>
         _adsData = [[NSMutableArray alloc]init];
     }
     return _adsData;
+}
+
+- (NSMutableArray *)newsData{
+    if (!_newsData) {
+        _newsData = [[NSMutableArray alloc]init];
+    }
+    return _newsData;
 }
 
 - (void)didReceiveMemoryWarning {
