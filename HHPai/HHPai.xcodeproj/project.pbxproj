@@ -11,7 +11,11 @@
 		833A03AC202AAC280088DD71 /* NewsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 833A03AB202AAC280088DD71 /* NewsCell.m */; };
 		833A03AF202AD1BF0088DD71 /* NewsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 833A03AE202AD1BF0088DD71 /* NewsModel.m */; };
 		833A03B1202ADB530088DD71 /* newsData.json in Resources */ = {isa = PBXBuildFile; fileRef = 833A03B0202ADB530088DD71 /* newsData.json */; };
+		833A03B3202BE79E0088DD71 /* paidNewsData.json in Resources */ = {isa = PBXBuildFile; fileRef = 833A03B2202BE79E0088DD71 /* paidNewsData.json */; };
+		833A03B6202BE93A0088DD71 /* PaidNewsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 833A03B5202BE93A0088DD71 /* PaidNewsCell.m */; };
+		833A03B9202BE9730088DD71 /* PaidNewsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 833A03B8202BE9730088DD71 /* PaidNewsModel.m */; };
 		8340E65E201836AA00BAC279 /* HHHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8340E65D201836AA00BAC279 /* HHHeaderView.m */; };
+		83442585202D984100F5B5BC /* PaidNewsFrameModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 83442584202D984100F5B5BC /* PaidNewsFrameModel.m */; };
 		83515F4D20108DF000883219 /* HHTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83515F4C20108DF000883219 /* HHTabBarViewController.m */; };
 		83515F5B2010A4E900883219 /* FoundViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83515F5A2010A4E800883219 /* FoundViewController.m */; };
 		83515F5E2010A4FB00883219 /* MessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83515F5C2010A4FB00883219 /* MessageViewController.m */; };
@@ -57,9 +61,16 @@
 		833A03AD202AD1BF0088DD71 /* NewsModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewsModel.h; sourceTree = "<group>"; };
 		833A03AE202AD1BF0088DD71 /* NewsModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewsModel.m; sourceTree = "<group>"; };
 		833A03B0202ADB530088DD71 /* newsData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = newsData.json; sourceTree = "<group>"; };
+		833A03B2202BE79E0088DD71 /* paidNewsData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = paidNewsData.json; sourceTree = "<group>"; };
+		833A03B4202BE93A0088DD71 /* PaidNewsCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PaidNewsCell.h; sourceTree = "<group>"; };
+		833A03B5202BE93A0088DD71 /* PaidNewsCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PaidNewsCell.m; sourceTree = "<group>"; };
+		833A03B7202BE9730088DD71 /* PaidNewsModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PaidNewsModel.h; sourceTree = "<group>"; };
+		833A03B8202BE9730088DD71 /* PaidNewsModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PaidNewsModel.m; sourceTree = "<group>"; };
 		833A103420197A6500248E27 /* HHPai.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HHPai.pch; sourceTree = "<group>"; };
 		8340E65C201836AA00BAC279 /* HHHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HHHeaderView.h; sourceTree = "<group>"; };
 		8340E65D201836AA00BAC279 /* HHHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HHHeaderView.m; sourceTree = "<group>"; };
+		83442583202D984100F5B5BC /* PaidNewsFrameModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PaidNewsFrameModel.h; sourceTree = "<group>"; };
+		83442584202D984100F5B5BC /* PaidNewsFrameModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PaidNewsFrameModel.m; sourceTree = "<group>"; };
 		83515F4B20108DF000883219 /* HHTabBarViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HHTabBarViewController.h; sourceTree = "<group>"; };
 		83515F4C20108DF000883219 /* HHTabBarViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HHTabBarViewController.m; sourceTree = "<group>"; };
 		83515F592010A4E800883219 /* FoundViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoundViewController.h; sourceTree = "<group>"; };
@@ -249,6 +260,7 @@
 			children = (
 				8367949C2028530800DDF728 /* adsData.json */,
 				833A03B0202ADB530088DD71 /* newsData.json */,
+				833A03B2202BE79E0088DD71 /* paidNewsData.json */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -358,6 +370,8 @@
 				8367949920283D1300DDF728 /* AdsCell.m */,
 				833A03AA202AAC280088DD71 /* NewsCell.h */,
 				833A03AB202AAC280088DD71 /* NewsCell.m */,
+				833A03B4202BE93A0088DD71 /* PaidNewsCell.h */,
+				833A03B5202BE93A0088DD71 /* PaidNewsCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -369,6 +383,10 @@
 				8367949620283CF100DDF728 /* AdsModel.m */,
 				833A03AD202AD1BF0088DD71 /* NewsModel.h */,
 				833A03AE202AD1BF0088DD71 /* NewsModel.m */,
+				833A03B7202BE9730088DD71 /* PaidNewsModel.h */,
+				833A03B8202BE9730088DD71 /* PaidNewsModel.m */,
+				83442583202D984100F5B5BC /* PaidNewsFrameModel.h */,
+				83442584202D984100F5B5BC /* PaidNewsFrameModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -490,6 +508,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				833A03B3202BE79E0088DD71 /* paidNewsData.json in Resources */,
 				83D341C61FF0A09C0025F8A1 /* LaunchScreen.storyboard in Resources */,
 				83D341C31FF0A09C0025F8A1 /* Assets.xcassets in Resources */,
 				8367949D2028530800DDF728 /* adsData.json in Resources */,
@@ -575,6 +594,9 @@
 			files = (
 				83515F642010A56000883219 /* HHNaVViewController.m in Sources */,
 				8340E65E201836AA00BAC279 /* HHHeaderView.m in Sources */,
+				83442585202D984100F5B5BC /* PaidNewsFrameModel.m in Sources */,
+				833A03B9202BE9730088DD71 /* PaidNewsModel.m in Sources */,
+				833A03B6202BE93A0088DD71 /* PaidNewsCell.m in Sources */,
 				83D341BE1FF0A09C0025F8A1 /* ViewController.m in Sources */,
 				83D341F81FF0AACA0025F8A1 /* HeaderView.m in Sources */,
 				833A03AF202AD1BF0088DD71 /* NewsModel.m in Sources */,
